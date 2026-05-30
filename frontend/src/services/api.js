@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api'
+  baseURL: 'https://sultonof-backend.onrender.com/api'
 });
 
 // Admin kirgan bo'lsa, xavfsizlik tokennini so'rovlarga avtomatik qo'shish
