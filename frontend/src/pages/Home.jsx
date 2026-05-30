@@ -40,7 +40,7 @@ const Home = () => {
       <div className="employees-grid">
         {employees.map((emp) => (
           <div key={emp._id} className="employee-card">
-            {emp.image && <img src={`http://localhost:5000/${emp.image}`} alt={emp.name[language]} />}
+            {emp.image && <img src={`https://sultonof-backend.onrender.com/${emp.image}`} alt={emp.name[language]} />}
             <h3>{emp.name[language]}</h3>
             <p className="position">{emp.position[language]}</p>
             <div className="stats">
@@ -90,7 +90,7 @@ const Home = () => {
               <h4>🖼️ {t.gallery}</h4>
               <div className="gallery-grid">
                 {about.images.map((img, i) => (
-                  <img key={i} src={`http://localhost:5000/${img}`} alt={`Gallery ${i}`} />
+                  <img key={i} src={`https://sultonof-backend.onrender.com/${img}`} alt={`Gallery ${i}`} />
                 ))}
               </div>
             </div>
@@ -107,7 +107,7 @@ const Home = () => {
         {projects.map((proj) => (
           <div key={proj._id} className="project-card">
             {proj.images?.[0] && (
-              <img src={`http://localhost:5000/${proj.images[0]}`} alt={proj.name[language]} />
+              <img src={`https://sultonof-backend.onrender.com/${proj.images[0]}`} alt={proj.name[language]} />
             )}
             <h3>{proj.name[language]}</h3>
             <p className="description">{proj.description[language]}</p>
