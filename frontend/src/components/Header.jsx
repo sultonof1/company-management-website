@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../App';
-import translations from '../Translations.js';
+import translations from '../translations.json';
 import '../styles/Header.css';
 
 const Header = () => {
